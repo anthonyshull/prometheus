@@ -23,7 +23,7 @@ Edit `manifests/prometheus-prometheus.yaml` to add remote write:
 ```yaml
 spec:
   remoteWrite:
-    - url: "http://vminsert:8428/api/v1/write"
+    - url: "http://vminsert.monitoring.svc:8480/insert/0/prometheus"
 ```
 Apply the manifests:
 ```
